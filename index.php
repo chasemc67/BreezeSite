@@ -398,11 +398,11 @@ window._fbq = window._fbq || [];
       <div class="container">
         <div class="row">
           <div class= "twelve columns">
-            <h5>Team Leaders</h5>
+            <h5>Team Leader</h5>
           </div>
         </div>
         <div class="row" style = "margin-right:auto; margin-left:auto;">
-          <div class = "six columns" style = "text-align:center;">
+          <div class = "twelve columns" style = "text-align:center;">
               <div class = "bio picture" style = "padding-left:10px; padding-right:10px;">
                 <picture>
                     <img src="./images/chase_breeze_bio.png" alt="Breeze Technical Services" >
@@ -414,17 +414,6 @@ window._fbq = window._fbq || [];
 
               </div> 
             </div>
-            <div class="six columns" style = "text-aligh:center;">
-              <div class = "bio picture" style = "padding-left:10px; padding-right:10px;">
-                <picture>
-                    <img src="./images/bradley_breeze_bio.png" alt="Breeze Technical Services" >
-                </picture>
-                <h3>Bradley</h3>
-                <p class = "last" style = "text-align:justify;">
-                  Bradley graduated from the University of Alberta with a Bachelor of Arts in Psychology and Computing Science. He's worked as tech support, a photographer, and a computer programmer. Bradley’s calm nature and technical proficiency has allowed him to help and relate with people from all walks of life.
-                </p>
-              </div>
-          </div>
         </div> <!-- End Row -->
       </div> <!-- End Container -->
   </div> <!-- End Band -->
