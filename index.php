@@ -248,47 +248,38 @@ window._fbq = window._fbq || [];
   </div> <!-- End Band -->
 
   <div class = "band pricing" id = "pricing">
-    <div class = "row" style="text-align: center;">
+    <div class = "row">
       <h4>Pricing</h4>
-      <h5>Get Help in the Comfort and Conveneience of Your Own Home <br>
+      <h5>Get help in the comfort and convenience of your own home <br>
       <b>Travel is always included within Greater Edmonton</b></h5>
     </div>
 
-    <div class = "row" style="margin-left: 40px; margin-right:40px; margin-top:5%; margin-bottom:3%;"> 
-      <div class = "four columns" > 
-        <h1 >$90</h1>
-        <!--h2 style = "display: inline;">one visit </h2-->
+    <div class = "row"> 
+      <div class = "pricingBox"> 
+        <h1>$90</h1>
 
         <div class = "item" id = "setup">
           <div class = itemContent>
             <h3 style="margin-top:30px;">Setup</h3>
           </div>
         
-
         <h5 class = "or">OR</h5>
-
-        
           <h3>Repair</h3>
-        
-
         <h5 class = "or">OR</h5>
-
-        
           <h3 style="margin-bottom:28px;">2-Hour Lesson</h3>
         </div>
 
         <a href="#" onclick="return false" class="popper" data-popbox="pop1">Info</a> 
-        <div id="pop1" class="popbox">
+        <div id="pop1" class="popbox" style="margin-right:auto; margin-left:auto; text-align: auto;">
           <p>Travel included. </p>
-          <p>Additional hourly rates may apply</p>
           <p>Repairs may require offsite service. Parts extra.</p>
         </div>        
 
       </div>
-
+      
+      <!--
       <div class = "four columns" id="test">
-        <h1>$280</h1>
-        <!--h2 style = "display: inline;">six months</h2-->        
+        <h1>$90</h1>
 
         <div class = "item" id = "setup/repair">
           <h3 style="margin-top:30px;">6 Months</h3>
@@ -312,10 +303,11 @@ window._fbq = window._fbq || [];
         </div>        
 
       </div>
-
+      -->
+  
+      <!-- 
       <div class = "four columns">
         <h1>$470</h1>
-        <!--h2 style = "display: inline;">twelve months</h2-->        
 
         <div class = "item" id = "setup/repair">
           <h3 style="margin-top:30px;">12 Months</h3>
@@ -339,6 +331,7 @@ window._fbq = window._fbq || [];
         </div>  
 
       </div>
+      -->
 
 
 
