@@ -356,6 +356,8 @@ window._fbq = window._fbq || [];
         <div class="row">
           <div class="twelve columns">
             <h5>Contact Us</h5>
+            <script id="timelyScript" src="https://book.gettimely.com/widget/book-button.js"> </script>
+<script>var button = new timelyButton('breezetechnicalserivces');</script>
           </div>
         </div>
 
@@ -387,7 +389,7 @@ window._fbq = window._fbq || [];
               ?>
             </ul>
             <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP!</p>
-        
+      
             <form method="post" action="php/process.php">
                       <label for="name">Name: <span class="required">*</span></label>
                       <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="John Doe" required="required" <?php echo($sr && !$cr['form_ok'] ? 'autofocus="autofocus"' : '')?> />
