@@ -252,7 +252,7 @@
     background-repeat: repeat;
 }
 
-.band.services h5{
+.band.services h4{
     color: white;
     text-align: center;
     font-weight: bold;
@@ -528,7 +528,7 @@ button:hover {
     color:black;
 }
 
-.band.contact h5{
+.band.contact h4{
     color: black;
     text-align: center;
     font-weight: bold;

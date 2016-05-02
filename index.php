@@ -109,7 +109,7 @@ window._fbq = window._fbq || [];
       <div class="container">
         <div class="row">
           <div class="twelve columns">
-            <h5>What We Do</h5>
+            <h4>Lessons setups, and repairs. We're Jacks of all trades!</h4>
           </div>
         </div>
         
@@ -117,7 +117,7 @@ window._fbq = window._fbq || [];
         <!-- Mobile services begin -->
         <div class = "row" id = "servicesMColumns">
           <div class = "four columns">
-              <h5>Setups</h5>
+              <h4>Setups</h4>
               <div id = "setupLessM">
               <p>Let us set up your new technology for you. You tell us what you want it to do, and we make it work. Sit back, relax, and watch the magic happen.</p>
             </div>
@@ -135,7 +135,7 @@ window._fbq = window._fbq || [];
             <button  id="setupBtnM">Show More</button>
           </div>
           <div class = "four columns">
-            <h5>Lessons</h5>
+            <h4>Lessons</h4>
             <div id = "lessonLessM">
               <p>From basic computer skills, to software like Photoshop and more, our patient and skilled gurus will teach you what you want to know. In a casual, one-on-one atmosphere, you set the pace. No more frustrating classes!</p>
             </div>
@@ -152,7 +152,7 @@ window._fbq = window._fbq || [];
             <button  id="lessonBtnM">Show More</button>
           </div>
           <div class = "four columns" style = "margin-bottom:15%;">
-               <h5>Repairs and Tune-Ups</h5>
+               <h4>Repairs and Tune-Ups</h4>
                <div id = "repairLessM">
                <p>Have a trusted piece of technology that just isn’t working the way it used to? Let us know what the problem is, and we’ll take care of the rest.</p>
               </div>
@@ -174,13 +174,13 @@ window._fbq = window._fbq || [];
         <div class = "row" id = "servicesDesktopHeaders">
     
         <div class = "four columns">
-            <h5>Setups</h5>
+            <h4>Setups</h4>
         </div>
         <div class = "four columns">
-            <h5>Lessons</h5>
+            <h4>Lessons</h4>
         </div>
         <div class = "four columns">
-            <h5>Repairs and Tune-Ups</h5>
+            <h4>Repairs and Tune-Ups</h4>
         </div>
         </div>
     
@@ -355,7 +355,7 @@ window._fbq = window._fbq || [];
       <div class="container">
         <div class="row">
           <div class="twelve columns">
-            <h5>Contact Us</h5>
+            <h4>Contact Us</h4>
           </div>
         </div>
 
