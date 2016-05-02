@@ -292,8 +292,6 @@ button:hover {
     background-image: url(../images/white_bg_1.png);
     background-repeat: repeat;
     overflow:auto;  
-    /*text-align: center; */
-    ;
 }
 
 .band.pricing .row {
