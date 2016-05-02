@@ -317,9 +317,10 @@ button:hover {
 }
 
 .band.pricing h4{
-    margin-top: 10%;
+    margin-top: 5%;
     display:block;
     font-weight: bold;
+    font-size: 60px;
 }
 .band.pricing h5{
     display:block;

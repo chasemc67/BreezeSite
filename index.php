@@ -249,15 +249,17 @@ window._fbq = window._fbq || [];
 
   <div class = "band pricing" id = "pricing">
     <div class = "row">
-      <h4>Pricing</h4>
       <h5>Get help in the comfort and convenience of your own home <br>
       <b>Travel is always included within Greater Edmonton</b></h5>
+      <h4>$90/hour flat rate</h4>
     </div>
 
+    <!--
     <div class = "row"> 
       <div class = "pricingBox"> 
         <h1>$90</h1>
 
+        
         <div class = "item" id = "setup">
           <div class = itemContent>
             <h3 style="margin-top:30px;">Setup</h3>
@@ -274,70 +276,7 @@ window._fbq = window._fbq || [];
           <p>Travel included. </p>
           <p>Repairs may require offsite service. Parts extra.</p>
         </div>        
-
-      </div>
-      
-      <!--
-      <div class = "four columns" id="test">
-        <h1>$90</h1>
-
-        <div class = "item" id = "setup/repair">
-          <h3 style="margin-top:30px;">6 Months</h3>
-          <h5 style="margin-top:22px;">In-home setup <br>and repair</h5>
-          <br>
-        
-
-        <h5 class = "or">OR</h5>
-
-        
-          <h3 style="margin-bottom:30px;">5 Lessons</h3>
-        </div>
-
-        <a href="#" onclick="return false" class="popper" data-popbox="pop2">Info</a> 
-        <div id="pop2" class="popbox">
-          <p>Travel included. </p>
-          <p>Lessons are standard 2 hour lessons </p>
-          <p>Monthly memberships are fully transferable</p>
-          <p>Memberships include one hour-long repair or setup per month. </p>
-          <p>Repairs may require offsite service. Parts extra.</p>
-        </div>        
-
-      </div>
-      -->
-  
-      <!-- 
-      <div class = "four columns">
-        <h1>$470</h1>
-
-        <div class = "item" id = "setup/repair">
-          <h3 style="margin-top:30px;">12 Months</h3>
-          <h5>In-home setup <br>and repair</h5>
-          <h5>+ phone support</h5>
-
-        <h5 class = "or">OR</h5>
-
-          <h3 style="margin-bottom:30px;">10 Lessons</h3>
-        </div>
-
-
-        <a href="#" onclick="return false" class="popper" data-popbox="pop3">Info</a> 
-        <div id="pop3" class="popbox">
-          <p>Travel included. </p>
-          <p>Lessons are standard 2 hour lessons </p>
-          <p>Monthly memberships are fully transferable</p>
-          <p>Memberships include one hour-long repair or setup per month. </p>
-          <p>Repairs may require offsite service. Parts extra.</p>
-          <p>Phone support is unlimited, and available during regular business hours (9AM - 9PM).</p>
-        </div>  
-
-      </div>
-      -->
-
-
-
-    </div>
-
-
+  -->
     <h5 style="text-align: center; margin-bottom: 5%;">Successful referrals get 20% off your next visit <br>
     or a $10 Amazon gift card! </h5>
 
