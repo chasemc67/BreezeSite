@@ -327,27 +327,17 @@ window._fbq = window._fbq || [];
   </div>
 
   <div class = "band about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class= "twelve columns">
-            <h5>Team Leader</h5>
-          </div>
-        </div>
-        <div class="row" style = "margin-right:auto; margin-left:auto;">
-          <div class = "twelve columns" style = "text-align:center;">
-              <div class = "bio picture" style = "padding-left:10px; padding-right:10px;">
-                <picture>
-                    <img src="./images/chase_breeze_bio.png" alt="Breeze Technical Services" >
-                </picture>
-                <h3>Chase</h3>
-                <p class = "last" style = "text-align:justify;">
-                  Chase is an Ex-Apple Genius, computer programmer, and custom computer builder. He’s fixed just about everything, and taught courses for all ages and skill levels. Being just as patient when teaching as he is focused when learning, Chase has brought the wonders of technology into people’s lives for years. 
-                </p>  
-
-              </div> 
-            </div>
-        </div> <!-- End Row -->
-      </div> <!-- End Container -->
+      <h5>Testimonials</h5>
+      <div class = "testimonial" style= >
+        <p> This is a very nice testimonial <br>
+          and here is some more text <br>
+          and here is some more text <br>
+          and here is some more text <br>
+          and here is some more text <br>
+          and here is some more text <br>
+          and here is some more text <br>
+        </p>
+      </div>
   </div> <!-- End Band -->
     
     
