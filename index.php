@@ -328,15 +328,33 @@ window._fbq = window._fbq || [];
 
   <div class = "band about" id="about">
       <h5>Testimonials</h5>
-      <div class = "testimonial" style= >
-        <p> This is a very nice testimonial <br>
-          and here is some more text <br>
-          and here is some more text <br>
-          and here is some more text <br>
-          and here is some more text <br>
-          and here is some more text <br>
-          and here is some more text <br>
-        </p>
+
+      <div class = "testimonialColumns">
+        <div class = "testimonialColumn">
+          <div class = "testimonial">
+            <p>“I can use my wifi in every room of my house now!”</p>
+          </div>
+
+          <div class = "testimonial">
+            <p>“Breeze saved my corrupt iPhone backup when Apple said they couldn’t.”</p>
+          </div>
+        </div>
+
+        <div class = "testimonialColumn">
+          <div class = "testimonial">
+            <p>“They got or work computers up and running better than they’ve ever been”</p>
+          </div>
+
+          <div class = "testimonial">
+            <p>“My laptop wouldn’t turn on, and I had a paper due in 5 hours. He fixed it in less than 30 minutes, and I got an A-” </p>
+          </div>
+        </div>
+
+        <div class = "testimonialColumn">
+          <div class = "testimonial">
+            <p>“I actually like using my computer now” </p>
+          </div>
+        </div>
       </div>
   </div> <!-- End Band -->
     
