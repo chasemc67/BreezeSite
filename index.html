@@ -1,4 +1,3 @@
-<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,22 +22,7 @@
   <script src="javascript/jqueryFunctions.js"></script>
   <script src="javascript/facebook.js"></script>
   <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- Facebook Conversion Code for breezepixel -->
-<script>(function() {
-var _fbq = window._fbq || (window._fbq = []);
-if (!_fbq.loaded) {
-var fbds = document.createElement('script');
-fbds.async = true;
-fbds.src = '//connect.facebook.net/en_US/fbds.js';
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(fbds, s);
-_fbq.loaded = true;
-}
-})();
-window._fbq = window._fbq || [];
-</script>
-<!--noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6028592810836&amp;cd[value]=0.00&amp;cd[currency]=CAD&amp;noscript=1" /></noscript-->
+  
 </head>
 <body>
     
@@ -359,20 +343,10 @@ window._fbq = window._fbq || [];
           </div>
         </div>
 
+        <!-- 
         <div class = "row">
           <div class="twelve columns" style = "margin-bottom: 10%;">
             <div id="contact-form">
-
-            <?php
-            //init variables
-            $cf = array();  //contact form
-            $sr = false;    //server response
-
-            if(isset($_SESSION['cf_returndata'])){
-              $cf = $_SESSION['cf_returndata'];
-              $sr = true;
-            }
-            ?>
 
             <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
               <li id="info">There were some problems with your form submission:</li>
@@ -415,9 +389,9 @@ window._fbq = window._fbq || [];
           </div>
           </div>
           </div>
-        </div> <!-- End Row -->
-      </div> <!-- End Container -->
-  </div> <!-- End Band -->
+        </div> -->
+      </div> 
+  </div> 
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
