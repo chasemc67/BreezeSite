@@ -1,0 +1,11 @@
+ToDo:
+
++ Wire services buttons
+
+Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
+
+Create a nav component that loses nav items on window resize
+
+
+Hook contact component up to server
+

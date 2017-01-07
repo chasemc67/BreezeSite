@@ -2,6 +2,116 @@ import React, { Component } from 'react';
 
 export default class ServicesComponent extends Component {
 
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			expandSetup: false,
+			expandLesson: false,
+			expandRepair: false
+		};
+	}
+
+
+	getSetupButton() {
+		if (this.state.expandSetup == false) {
+			return (<button id="setupBtn" onClick={() => this.setState({expandSetup: true})}>Show More</button>);
+		}
+		else {
+			return (<button id="setupBtn" onClick={() => this.setState({expandSetup: false})}>Show Less</button>);
+		}
+	}
+
+	getLessonButton() {
+		if (this.state.expandLesson == false) {
+			return (<button id="lessonBtn" onClick={() => this.setState({expandLesson: true})}>Show More</button>);
+		}
+		else {
+			return (<button id="lessonBtn" onClick={() => this.setState({expandLesson: false})}>Show Less</button>);
+		}
+	}
+
+	getRepairButton() {
+		if (this.state.expandRepair == false) {
+			return (<button id="repairBtn" onClick={() => this.setState({expandRepair: true})}>Show More</button>);
+		}
+		else {
+			return (<button id="repairBtn" onClick={() => this.setState({expandRepair: false})}>Show Less</button>);
+		}
+	}
+
+
+	getSetupContent() {
+		if (!this.state.expandSetup) {
+			return(
+				<div id = "setupLess">
+	              <p>Let us set up your new technology for you. You tell us what you want it to do, and we make it work. Sit back, relax, and watch the magic happen.</p>
+	            </div>
+			);
+		} else {
+			return (
+				<div id = "setupMoreM" style={{textAlign:"left"}}>
+		                <p>Our tech gurus set-up:
+							<br /><br />•&nbsp;Printers
+							<br />•&nbsp;Mobile devices (iPads, iPhones, and other tablets and smartphones)
+							<br />•&nbsp;Home automation systems
+							<br />•&nbsp;New computers
+							<br />•&nbsp;Data transfers from your old devices to your new ones
+
+							<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form below, and one of our gurus will be more than happy to help.
+						</p> 
+				</div>
+			);
+		}
+	}
+
+	getLessonConetent() {
+		if (!this.state.expandLesson) {
+			return(
+				<div id = "lessonLess">
+		              <p>From basic computer skills, to software like Photoshop and more, our patient and skilled gurus will teach you what you want to know. In a casual, one-on-one atmosphere, you set the pace. No more frustrating classes!</p>
+		            </div>
+			);
+		} else {
+			return (
+				<div id = "lessonMore" style={{textAlign: "left"}}>
+		            <p>Our tech gurus can teach you how to:
+						<br /><br />•&nbsp;Transfer data from cameras, phones, and tablets, to your computer
+						<br />•&nbsp;Synchronize your files across your devices (iCloud, Google Drive, Microsoft OneDrive, Dropbox, etc.)
+						<br />•&nbsp;Edit your photos and videos using software like Adobe Photoshop, Adobe Premier, iPhoto, and iMovie
+						<br />•&nbsp;Navigate your computer’s basic functionalities with ease
+						<br />•&nbsp;Use tools like email and web browsing
+						                
+						<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form , and one of our gurus will be more than happy to help.
+					</p>
+		        </div>  
+			);
+		}
+
+	}
+
+	getRepairContent() {
+		if (!this.state.expandRepair) {
+			return(
+				<div id = "repairLess">
+		        	<p>Have a trusted piece of technology that just isn’t working the way it used to? Let us know what the problem is, and we’ll take care of the rest.</p>
+		        </div>
+			);
+		} else {
+			return (
+				<div id = "repairMore" style={{textAlign:"left"}}>
+		                <p>Our tech gurus will take care of:
+							<br /><br />•&nbsp;Speeding up slow computers
+							<br />•&nbsp;Recovering/replacing broken or damaged hard-drives
+							<br />•&nbsp;Virus removal (and anti-virus installation)
+							                
+							<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form below, and one of our gurus will be more than happy to help.
+						</p>
+		        </div>
+			);
+		}
+	}
+
 	render() {
 		return(
 			<div className="container">
@@ -16,55 +126,20 @@ export default class ServicesComponent extends Component {
 		        <div className = "row servicesMobile" id = "servicesMColumns">
 		          <div className = "four columns">
 		              <h5>Setups</h5>
-		              <div id = "setupLessM">
-		              <p>Let us set up your new technology for you. You tell us what you want it to do, and we make it work. Sit back, relax, and watch the magic happen.</p>
-		            </div>
-		            <div id = "setupMoreM" style={{display: "none", textAlign:"left"}}>
-		                <p>Our tech gurus set-up:
-		<br /><br />•&nbsp;Printers
-		<br />•&nbsp;Mobile devices (iPads, iPhones, and other tablets and smartphones)
-		<br />•&nbsp;Home automation systems
-		<br />•&nbsp;New computers
-		<br />•&nbsp;Data transfers from your old devices to your new ones
-
-		<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form below, and one of our gurus will be more than happy to help.
-		</p> 
-		            </div>
-		            <button  id="setupBtnM">Show More</button>
+		              {this.getSetupContent()}		        
+		              {this.getSetupButton()}
 		          </div>
 		          <div className = "four columns">
 		            <h5>Lessons</h5>
-		            <div id = "lessonLessM">
-		              <p>From basic computer skills, to software like Photoshop and more, our patient and skilled gurus will teach you what you want to know. In a casual, one-on-one atmosphere, you set the pace. No more frustrating classes!</p>
-		            </div>
-		            <div id = "lessonMoreM" style={{display: "none", textAlign: "left"}}>
-		            <p>Our tech gurus can teach you how to:
-		<br /><br />•&nbsp;Transfer data from cameras, phones, and tablets, to your computer
-		<br />•&nbsp;Synchronize your files across your devices (iCloud, Google Drive, Microsoft OneDrive, Dropbox, etc.)
-		<br />•&nbsp;Edit your photos and videos using software like Adobe Photoshop, Adobe Premier, iPhoto, and iMovie
-		<br />•&nbsp;Navigate your computer’s basic functionalities with ease
-		<br />•&nbsp;Use tools like email and web browsing
-		                
-		<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form , and one of our gurus will be more than happy to help.</p>
-		            </div>  
-		            <button  id="lessonBtnM">Show More</button>
+		            {this.getLessonConetent()}
+		            {this.getLessonButton()}
 		          </div>
 		          <div className = "four columns" style={{marginBottom: "15%"}}>
 		               <h5>Repairs and Tune-Ups</h5>
-		               <div id = "repairLessM">
-		               <p>Have a trusted piece of technology that just isn’t working the way it used to? Let us know what the problem is, and we’ll take care of the rest.</p>
-		              </div>
-		              <div id = "repairMoreM" style={{display:"none", textAlign:"left"}}>
-		                <p>Our tech gurus will take care of:
-		<br /><br />•&nbsp;Speeding up slow computers
-		<br />•&nbsp;Recovering/replacing broken or damaged hard-drives
-		<br />•&nbsp;Virus removal (and anti-virus installation)
-		                
-		<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form below, and one of our gurus will be more than happy to help.</p>
-		              </div>
-		              <button  id="repairBtnM">Show More</button>
+		              {this.getRepairContent()}
+		              {this.getRepairButton()}
 		          </div>
-		    </div>
+		    	</div>
 		    
 		        {/*<!-- Mobile services end -->*/}
 		    
@@ -84,60 +159,25 @@ export default class ServicesComponent extends Component {
 		    
 		        <div className = "row servicesDesktop" id = "servicesDesktopContent">
 		          <div className = "four columns" >
-		            <div id = "setupLess">
-		              <p>Let us set up your new technology for you. You tell us what you want it to do, and we make it work. Sit back, relax, and watch the magic happen.</p>
-		            </div>
-		            <div id = "setupMore" style={{display:"none", textAlign:"left"}}>
-		                <p>Our tech gurus set-up:
-		<br /><br />•&nbsp;Printers
-		<br />•&nbsp;Mobile devices (iPads, iPhones, and other tablets and smartphones)
-		<br />•&nbsp;Home automation systems
-		<br />•&nbsp;New computers
-		<br />•&nbsp;Data transfers from your old devices to your new ones
-
-		<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form below, and one of our gurus will be more than happy to help.
-		</p> 
-		            </div>
+		            {this.getSetupContent()}
 		          </div>
 		          <div className = "four columns">
-		            <div id = "lessonLess">
-		              <p>From basic computer skills, to software like Photoshop and more, our patient and skilled gurus will teach you what you want to know. In a casual, one-on-one atmosphere, you set the pace. No more frustrating classes!</p>
-		            </div>
-		            <div id = "lessonMore" style={{display:"none", textAlign:"left"}}>
-		            <p>Our tech gurus can teach you how to:
-		<br /><br />•&nbsp;Transfer data from cameras, phones, and tablets, to your computer
-		<br />•&nbsp;Synchronize your files across your devices (iCloud, Google Drive, Microsoft OneDrive, Dropbox, etc.)
-		<br />•&nbsp;Edit your photos and videos using software like Adobe Photoshop, Adobe Premier, iPhoto, and iMovie
-		<br />•&nbsp;Navigate your computer’s basic functionalities with ease
-		<br />•&nbsp;Use tools like email and web browsing
-		                
-		<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form , and one of our gurus will be more than happy to help.</p>
-		            </div>
+		            {this.getLessonConetent()}
 		          </div>
 		          <div className = "four columns">
-		              <div id = "repairLess">
-		               <p>Have a trusted piece of technology that just isn’t working the way it used to? Let us know what the problem is, and we’ll take care of the rest.</p>
-		              </div>
-		              <div id = "repairMore" style={{display:"none", textAlign:"left"}}>
-		                <p>Our tech gurus will take care of:
-		<br /><br />•&nbsp;Speeding up slow computers
-		<br />•&nbsp;Recovering/replacing broken or damaged hard-drives
-		<br />•&nbsp;Virus removal (and anti-virus installation)
-		                
-		<br /><br />Don’t see what you want on the list? Request a free consultation using the contact form below, and one of our gurus will be more than happy to help.</p>
-		              </div>
+		              {this.getRepairContent()}
 		          </div>
 		          </div>
 		        <div className = "row servicesDesktop" style = {{marginBottom: "15%"}} id = "servicesDesktopButtons">
 		          <div className = "four columns" >
-		            <button  id="setupBtn">Show More</button>
+		            {this.getSetupButton()}
 		          </div>
 
 		          <div className = "four columns">
-		            <button  id="lessonBtn">Show More</button>
+		            {this.getLessonButton()}
 		          </div>
 		          <div className = "four columns">
-		            <button  id="repairBtn">Show More</button>
+		            {this.getRepairButton()}
 		          </div>
 		        </div> {/*<!-- End Row -->*/}
 
