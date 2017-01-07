@@ -13,7 +13,7 @@ export default class ServicesComponent extends Component {
 		        
 		          
 		        {/*<!-- Mobile services begin -->*/}
-		        <div className = "row" id = "servicesMColumns">
+		        <div className = "row servicesMobile" id = "servicesMColumns">
 		          <div className = "four columns">
 		              <h5>Setups</h5>
 		              <div id = "setupLessM">
@@ -69,7 +69,7 @@ export default class ServicesComponent extends Component {
 		        {/*<!-- Mobile services end -->*/}
 		    
 		        {/*<!-- Desktop services begin -->*/}
-		        <div className = "row" id = "servicesDesktopHeaders">
+		        <div className = "row servicesDesktop" id = "servicesDesktopHeaders">
 		    
 		        <div className = "four columns">
 		            <h5>Setups</h5>
@@ -82,7 +82,7 @@ export default class ServicesComponent extends Component {
 		        </div>
 		        </div>
 		    
-		        <div className = "row" id = "servicesDesktopContent">
+		        <div className = "row servicesDesktop" id = "servicesDesktopContent">
 		          <div className = "four columns" >
 		            <div id = "setupLess">
 		              <p>Let us set up your new technology for you. You tell us what you want it to do, and we make it work. Sit back, relax, and watch the magic happen.</p>
@@ -128,7 +128,7 @@ export default class ServicesComponent extends Component {
 		              </div>
 		          </div>
 		          </div>
-		        <div className = "row" style = {{marginBottom: "15%"}} id = "servicesDesktopButtons">
+		        <div className = "row servicesDesktop" style = {{marginBottom: "15%"}} id = "servicesDesktopButtons">
 		          <div className = "four columns" >
 		            <button  id="setupBtn">Show More</button>
 		          </div>

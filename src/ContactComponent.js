@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 
-
 export default class ContactComponent extends Component {
+  submitEmail() {
+    
+  }
+
   render() {
     return (
       <div className="container">

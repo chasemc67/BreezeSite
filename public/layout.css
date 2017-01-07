@@ -286,6 +286,18 @@ button:hover {
     border-color: white;
 }
 
+@media screen and (max-width: 550px) {
+    .servicesDesktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .servicesMobile{
+        display: none;
+    }
+}
+
 /* ---------------- Pricing ------------------- */
 .band.pricing{
     background-color: white;
