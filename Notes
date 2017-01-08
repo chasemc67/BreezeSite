@@ -2,6 +2,8 @@ ToDo:
 
 + Wire services buttons
 
+get html select in contact us wired properly
+
 Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
 
 Create a nav component that loses nav items on window resize
