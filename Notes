@@ -1,13 +1,20 @@
 ToDo:
 
-+ Wire services buttons
+[+] Wire services buttons
 
-get html select in contact us wired properly
+[+] get html select in contact us wired properly
 
-Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
+[ ] Hook contact component up to server
 
-Create a nav component that loses nav items on window resize
+[ ] Set default value for select
+
+[ ] Handle incorrect entry in contact form
 
 
-Hook contact component up to server
+[ ] Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
+
+[ ] Create a nav component that loses nav items on window resize
+
+
+
 

@@ -27,6 +27,24 @@ export default class ContactComponent extends Component {
     console.log("phone: " + this.state.phone);
     console.log("contactType: " + this.state.contactType);
     console.log("message: " + this.state.message);
+
+    $.ajax({
+      type: 'POST',
+      url: '/contact',
+      data: {
+        name: this.state.name, 
+        email: this.state.email, 
+        phone: this.state.phone,
+        contactType: this.state.contactType,
+        message: this.state.message
+      }
+    })
+      .done((data) => {
+        console.log(data.message);
+      })
+      .fail((jqXhr) => {
+        console.log(jqXhr.responseJSON.message);
+      });
   }
 
   handleNameChange(event) {
