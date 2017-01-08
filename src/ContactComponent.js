@@ -75,7 +75,7 @@ export default class ContactComponent extends Component {
             <input type="tel" id="telephone" name="telephone" placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
 
             <label for="contactType">Preferred Mode of Contact: </label>
-            <select id="contactType" name="contactType" onChange={this.handleContactTypeChange} >
+            <select id="contactType" name="contactType" onChange={this.handleContactTypeChange}>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
             </select>
