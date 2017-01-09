@@ -47,7 +47,8 @@ export default class ContactComponent extends Component {
         console.log(data.message);
       })
       .fail((jqXhr) => {
-        console.log(jqXhr.responseJSON.message);
+        // console.log(jqXhr.responseJSON.message);
+        console.log("Post request failed");
       });
   }
 

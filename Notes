@@ -4,13 +4,15 @@ ToDo:
 
 [+] get html select in contact us wired properly
 
-[ ] Hook contact component up to server
+[+] Hook contact component up to server
+[ ] Send email from server
+[ ] Sanitize email message of script tags
 
-[ ] Set default value for select
+[+] Set default value for select
 
 [ ] Switch from ajax to xmlhttprequest (and take notes in quiver about what both examples look like)
 
-[ ] Handle incorrect entry in contact form
+[ ] Alert user to incorrect entry in contact form
 
 
 [ ] Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
