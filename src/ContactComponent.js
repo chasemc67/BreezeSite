@@ -111,26 +111,25 @@ export default class ContactComponent extends Component {
           <div className="twelve columns" style={{marginBottom: "10%"}}>
             <div id="contact-form">
 
-            <label for="name">Name: <span class="required">*</span></label>
+            <label htmlFor="name">Name: </label>
             <input type="text" id="name" name="name" placeholder="John Smith" value={this.state.name} onChange={this.handleNameChange} />
 
-            <label for="email">Email Address: <span class="required">*</span></label>
+            <label htmlFor="email">Email Address: </label>
             <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="johnsmith@example.com" required="required" />
 
-            <label for="telephone">Telephone: </label>
+            <label htmlFor="telephone">Telephone: </label>
             <input type="tel" id="telephone" name="telephone" placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
 
-            <label for="contactType">Preferred Mode of Contact: </label>
+            <label htmlFor="contactType">Preferred Mode of Contact: </label>
             <select id="contactType" name="contactType" value={this.state.contactType} onChange={this.handleContactTypeChange}>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
             </select>
 
-            <label for="message">Message: <span class="required">*</span></label>
+            <label htmlFor="message">Message: </label>
             <textarea id="message" name="message" placeholder="Enter your message here." value={this.state.message} onChange={this.handleMessageChange}></textarea>
              
             <input type="submit" value="Submit" id="submit-button" onClick={this.submitEmail} />
-            <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
         
             </div>
           </div>

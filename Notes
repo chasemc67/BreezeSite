@@ -1,23 +1,21 @@
 ToDo:
 
 [+] Wire services buttons
-
 [+] get html select in contact us wired properly
-
 [+] Hook contact component up to server
-[ ] Send email from server
-[ ] Sanitize email message of script tags
-
 [+] Set default value for select
 
-[ ] Switch from ajax to xmlhttprequest (and take notes in quiver about what both examples look like)
 
 [ ] Alert user to incorrect entry in contact form
+[ ] Create a nav component that loses nav items on window resize, or just do with css
+[ ] Switch from ajax to xmlhttprequest (and take notes in quiver about what both examples look like), and remove jquery
 
+[ ] Check email sending from server in prod
+[ ] Sanitize email message of script tags
 
 [ ] Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
 
-[ ] Create a nav component that loses nav items on window resize
+
 
 
 
