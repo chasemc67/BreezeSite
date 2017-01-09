@@ -7,6 +7,9 @@ ToDo:
 
 
 [ ] Alert user to incorrect entry in contact form
+
+[ ] Add message at top for "Message successfully sent" and "message not sent, one or more fields missing"
+
 [ ] Create a nav component that loses nav items on window resize, or just do with css
 [ ] Switch from ajax to xmlhttprequest (and take notes in quiver about what both examples look like), and remove jquery
 

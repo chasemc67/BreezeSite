@@ -10,7 +10,10 @@ export default class ContactComponent extends Component {
       email: "",
       phone: "",
       contactType: "email",
-      message: ""
+      message: "",
+
+      badPhone: false,
+      badEmail: false
     };
 
     this.submitEmail = this.submitEmail.bind(this);
@@ -27,6 +30,9 @@ export default class ContactComponent extends Component {
     console.log("phone: " + this.state.phone);
     console.log("contactType: " + this.state.contactType);
     console.log("message: " + this.state.message);
+
+
+    this.setState({badPhone: false, badEmail: false});
 
     if (!this.validityCheck()) {
       return false;
@@ -54,9 +60,13 @@ export default class ContactComponent extends Component {
 
   validityCheck() {
     if (this.state.contactType == "email") {
-      return this.checkValidEmail(this.state.email);
+      let badEmail = !this.checkValidEmail(this.state.email);
+      this.setState({badEmail: badEmail});
+      return !badEmail;
     } else if (this.state.contactType == "phone") {
-      return this.checkValidPhone(this.state.phone);
+      let badPhone = !this.checkValidPhone(this.state.phone);;
+      this.setState({badPhone: badPhone});
+      return !badPhone;
     } else {
       console.log("unknown contact type chose");
       return true;
@@ -96,7 +106,22 @@ export default class ContactComponent extends Component {
   handleMessageChange(event) {
     this.setState({message: event.target.value});
   }
-  
+
+  checkBadEmailInput() {
+    if (this.state.badEmail)
+      return {borderColor:"red"};
+    else {
+      return {};
+    }
+  }
+
+  checkBadPhoneInput() {
+    if (this.state.badPhone)
+      return {borderColor:"red"};
+    else {
+      return;
+    }
+  }
 
   render() {
     return (
@@ -115,10 +140,10 @@ export default class ContactComponent extends Component {
             <input type="text" id="name" name="name" placeholder="John Smith" value={this.state.name} onChange={this.handleNameChange} />
 
             <label htmlFor="email">Email Address: </label>
-            <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="johnsmith@example.com" required="required" />
+            <input type="email" id="email" name="email" style={this.checkBadEmailInput()} value={this.state.email} onChange={this.handleEmailChange} placeholder="johnsmith@example.com" required="required" />
 
             <label htmlFor="telephone">Telephone: </label>
-            <input type="tel" id="telephone" name="telephone" placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
+            <input type="tel" id="telephone" name="telephone" style={this.checkBadPhoneInput()} placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
 
             <label htmlFor="contactType">Preferred Mode of Contact: </label>
             <select id="contactType" name="contactType" value={this.state.contactType} onChange={this.handleContactTypeChange}>
