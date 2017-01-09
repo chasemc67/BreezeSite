@@ -9,7 +9,7 @@ export default class ContactComponent extends Component {
       name: "",
       email: "",
       phone: "",
-      contactType: "",
+      contactType: "email",
       message: ""
     };
 
@@ -28,6 +28,10 @@ export default class ContactComponent extends Component {
     console.log("contactType: " + this.state.contactType);
     console.log("message: " + this.state.message);
 
+    if (!this.validityCheck()) {
+      return false;
+    }
+
     $.ajax({
       type: 'POST',
       url: '/contact',
@@ -45,6 +49,29 @@ export default class ContactComponent extends Component {
       .fail((jqXhr) => {
         console.log(jqXhr.responseJSON.message);
       });
+  }
+
+  validityCheck() {
+    if (this.state.contactType == "email") {
+      return this.checkValidEmail(this.state.email);
+    } else if (this.state.contactType == "phone") {
+      return this.checkValidPhone(this.state.phone);
+    } else {
+      console.log("unknown contact type chose");
+      return true;
+    }
+  }
+
+  checkValidEmail(email) {
+    console.log("Checking email");
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  checkValidPhone(phone) {
+    console.log("Checking phone number");
+    var re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    return re.test(phone);
   }
 
   handleNameChange(event) {
@@ -93,7 +120,7 @@ export default class ContactComponent extends Component {
             <input type="tel" id="telephone" name="telephone" placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
 
             <label for="contactType">Preferred Mode of Contact: </label>
-            <select id="contactType" name="contactType" onChange={this.handleContactTypeChange}>
+            <select id="contactType" name="contactType" value={this.state.contactType} onChange={this.handleContactTypeChange}>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
             </select>
