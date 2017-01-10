@@ -13,7 +13,10 @@ export default class ContactComponent extends Component {
       message: "",
 
       badPhone: false,
-      badEmail: false
+      badEmail: false,
+
+      messageSuccessful: false
+
     };
 
     this.submitEmail = this.submitEmail.bind(this);
@@ -107,20 +110,22 @@ export default class ContactComponent extends Component {
     this.setState({message: event.target.value});
   }
 
-  checkBadEmailInput() {
-    if (this.state.badEmail)
+  checkBadInput(inputType) {
+    if (this.state[inputType]){
       return {borderColor:"red"};
-    else {
+    } else {
       return {};
     }
   }
 
-  checkBadPhoneInput() {
-    if (this.state.badPhone)
-      return {borderColor:"red"};
-    else {
-      return;
-    }
+  getMessageStatus() {
+    return (
+      <div className="row">
+        <div className="twelve columns" style={{marginBottom: "10%"}}>
+          Omg you sent a message
+        </div>
+      </div>
+    );
   }
 
   render() {
@@ -132,6 +137,8 @@ export default class ContactComponent extends Component {
           </div>
         </div>
 
+        {this.getMessageStatus()}
+
         <div className = "row">
           <div className="twelve columns" style={{marginBottom: "10%"}}>
             <div id="contact-form">
@@ -140,10 +147,10 @@ export default class ContactComponent extends Component {
             <input type="text" id="name" name="name" placeholder="John Smith" value={this.state.name} onChange={this.handleNameChange} />
 
             <label htmlFor="email">Email Address: </label>
-            <input type="email" id="email" name="email" style={this.checkBadEmailInput()} value={this.state.email} onChange={this.handleEmailChange} placeholder="johnsmith@example.com" required="required" />
+            <input type="email" id="email" name="email" style={this.checkBadInput("badEmail")} value={this.state.email} onChange={this.handleEmailChange} placeholder="johnsmith@example.com" required="required" />
 
             <label htmlFor="telephone">Telephone: </label>
-            <input type="tel" id="telephone" name="telephone" style={this.checkBadPhoneInput()} placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
+            <input type="tel" id="telephone" name="telephone" style={this.checkBadInput("badPhone")} placeholder="(780) 444 4444" value={this.state.phone} onChange={this.handlePhoneChange} />
 
             <label htmlFor="contactType">Preferred Mode of Contact: </label>
             <select id="contactType" name="contactType" value={this.state.contactType} onChange={this.handleContactTypeChange}>
