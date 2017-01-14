@@ -33,7 +33,10 @@ app.post('/contact', function(req, res, next) {
 	res.send({message: "email sent successfully"});
 });
 
-app.listen(3000, function(err) {
+var isProduction = process.env.NODE_ENV === 'production';
+var port = isProduction ? process.env.PORT : 3000;
+
+app.listen(port, function(err) {
   if (err) {
     return console.error(err);
   }
