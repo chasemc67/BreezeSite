@@ -1,10 +1,6 @@
 ToDo:
 
-[+] Wire services buttons
-[+] get html select in contact us wired properly
-[+] Hook contact component up to server
-[+] Set default value for select
-
+[ ] Use authenticated email account for emai sending
 
 [ ] Alert user to incorrect entry in contact form
 
@@ -13,10 +9,13 @@ ToDo:
 [ ] Create a nav component that loses nav items on window resize, or just do with css
 [ ] Switch from ajax to xmlhttprequest (and take notes in quiver about what both examples look like), and remove jquery
 
-[ ] Check email sending from server in prod
 [ ] Sanitize email message of script tags
 
-[ ] Check if we want services text to be left aligned or centered in each instance. Because its different now than it was.
+[ ] Fix webpack file for prod (minimize that js n stuff)
+
+[ ] animate services "more info" coming down
+
+[ ] Testimonials page 
 
 
 
