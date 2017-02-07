@@ -22,13 +22,13 @@ module.exports = {
       include: path.join(__dirname, 'src')
     },
     {
-      test: /\.scss$/,
-      loaders: [ 'style', 'css', 'sass' ]
+      test: /\.sass$/,
+      loaders: [ 'style', 'css', 'sass']
     },
     { 
         test: /\.(png|jpg)$/,
         include: path.join(__dirname, 'img'),
-        loader: 'url-loader?limit=10000' 
+        loader: 'url-loader?limit=200000' 
      }]
   }
 };
