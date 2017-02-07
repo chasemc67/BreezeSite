@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Carousel from 'nuka-carousel';
 
 import TestFace from "../img/chase_breeze_bio.png"
+import "../sass/testimonials.scss"
 
 export default class TestimonialsComponent extends Component {
 	constructor(props){
@@ -14,7 +15,7 @@ export default class TestimonialsComponent extends Component {
 		return(
 			<div className="testimony">
 				<img src={image} />
-				<h2>{text}</h2>
+				<h1>{text}</h1>
 			</div>
 		);
 	}
