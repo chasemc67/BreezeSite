@@ -3,7 +3,7 @@
 
 
 	.testimonyGroup{
-		display: block;
+		display: table; // no idea why this cases margin: auto to work...
 		margin-left: auto;
 		margin-right: auto;
 

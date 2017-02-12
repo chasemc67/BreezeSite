@@ -41,11 +41,21 @@ export default class TestimonialsComponent extends Component {
 					{this.getTestimony(TestFace, "Omg its your face")}
 					{this.getTestimony(TestFace, "Omg its their face")}
 				</div>
-		        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide2"/>
-		        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide3"/>
-		        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide4"/>
-		        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5"/>
-		        <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6"/>
+		        <div className="testimonyGroup">
+					{this.getTestimony(TestFace, "Omg its my face")}
+					{this.getTestimony(TestFace, "Omg its your face")}
+					{this.getTestimony(TestFace, "Omg its their face")}
+				</div>
+				<div className="testimonyGroup">
+					{this.getTestimony(TestFace, "Omg its my face")}
+					{this.getTestimony(TestFace, "Omg its your face")}
+					{this.getTestimony(TestFace, "Omg its their face")}
+				</div>
+				<div className="testimonyGroup">
+					{this.getTestimony(TestFace, "Omg its my face")}
+					{this.getTestimony(TestFace, "Omg its your face")}
+					{this.getTestimony(TestFace, "Omg its their face")}
+				</div>
 		    </Carousel>
 		);
 	}
