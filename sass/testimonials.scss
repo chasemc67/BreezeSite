@@ -1,5 +1,39 @@
-.testimony {
-	h1 {
-		color: blue;
+.testimonials{
+	background: red;
+
+
+	.testimonyGroup{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		.testimony {
+			display: inline-block;
+			//overflow: none;
+			margin-left: 30px;
+			background-color: rgba(0,0,0,0.5);
+			img{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100px;
+				height: 100px;
+			}
+
+			.testimonyBody{
+				display: block;
+				border-radius: 25px;
+	    		background: #73AD21;
+	    		padding: 20px; 
+	    		width: 200px;
+	    		height: 150px;
+
+				p {
+					color: blue;
+				}	
+			}
+			
+		}	
 	}
 }
+
